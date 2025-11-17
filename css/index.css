@@ -998,3 +998,14 @@
         #special-offers {
             scroll-margin-top: 5rem;
         }
+.nav-right,
+.cart-btn {
+    display: flex !important;
+}
+
+@media (max-width: 768px) {
+    .nav-right,
+    .cart-btn {
+        display: flex !important;
+    }
+}
