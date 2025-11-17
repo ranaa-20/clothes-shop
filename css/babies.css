@@ -885,7 +885,19 @@
             .babies-hero p {
                 font-size: 1.1rem;
             }
-            
+
+          .nav-right,
+.cart-btn {
+    display: flex !important;
+}
+
+@media (max-width: 768px) {
+    .nav-right,
+    .cart-btn {
+        display: flex !important;
+    }
+}
+
             .category-tabs {
                 flex-direction: column;
                 gap: 20px;
