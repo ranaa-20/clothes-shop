@@ -892,3 +892,14 @@
                 gap: 20px;
             }
         }
+.nav-right,
+.cart-btn {
+    display: flex !important;
+}
+
+@media (max-width: 768px) {
+    .nav-right,
+    .cart-btn {
+        display: flex !important;
+    }
+}
