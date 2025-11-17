@@ -88,46 +88,48 @@ function updateNavbarLanguage(lang) {
     const navbarContainer = document.getElementById('navbar-container');
     if (navbarContainer) {
         navbarContainer.innerHTML = createNavbar(lang);
-        // إعادة ربط الأحداث بعد تحديث النافبار
         attachNavbarEvents();
     }
 }
 
-// دالة لربط الأحداث في النافبار
+// دالة ربط الأحداث
 function attachNavbarEvents() {
-    // إعداد القائمة المتنقلة
+    // Mobile Menu
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
     const mobileMenu = document.getElementById('mobileMenu');
     
     if (mobileMenuBtn && mobileMenu) {
         mobileMenuBtn.addEventListener('click', () => {
-            const isOpen = mobileMenu.style.display === 'block';
-            mobileMenu.style.display = isOpen ? 'none' : 'block';
-            mobileMenuBtn.innerHTML = isOpen ? '<i class="fas fa-bars"></i>' : '<i class="fas fa-times"></i>';
+            mobileMenu.classList.toggle('open');
+
+            const isOpen = mobileMenu.classList.contains("open");
+
+            mobileMenuBtn.innerHTML = isOpen
+                ? '<i class="fas fa-times"></i>'
+                : '<i class="fas fa-bars"></i>';
         });
     }
     
-    // إضافة مستمعي الأحداث للأزرار
+    // زر اللغة
     const languageBtn = document.getElementById('languageBtn');
     if (languageBtn) {
         languageBtn.addEventListener('click', function() {
-            // إرسال حدث لتغيير اللغة في الصفحة الرئيسية
             const event = new CustomEvent('languageToggle');
             document.dispatchEvent(event);
         });
     }
     
+    // زر الوضع الداكن
     const darkModeBtn = document.getElementById('darkModeBtn');
     if (darkModeBtn) {
         darkModeBtn.addEventListener('click', function() {
-            // إرسال حدث لتغيير الوضع الداكن في الصفحة الرئيسية
             const event = new CustomEvent('darkModeToggle');
             document.dispatchEvent(event);
         });
     }
 }
 
-// دالة علشان نحط الـ Navbar في الصفحة
+// تحميل النافبار
 function loadNavbar() {
     const navbarContainer = document.getElementById('navbar-container');
     if (navbarContainer) {
@@ -137,5 +139,4 @@ function loadNavbar() {
     }
 }
 
-// لما الصفحه تتحمل، ننادي loadNavbar
 document.addEventListener('DOMContentLoaded', loadNavbar);
