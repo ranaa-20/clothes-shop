@@ -864,3 +864,15 @@
         [dir="rtl"] .newsletter-section {
             background: linear-gradient(to left, var(--primary-color), var(--secondary-color), var(--accent-color));
         }
+
+.nav-right,
+.cart-btn {
+    display: flex !important;
+}
+
+@media (max-width: 768px) {
+    .nav-right,
+    .cart-btn {
+        display: flex !important;
+    }
+}
