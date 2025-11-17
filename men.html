@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Collection - StyleShop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+ <link rel="stylesheet" href="css/men.css">
+</head>
+<body>
+    <!-- Navigation Bar - LTR Direction -->
+    <div id="navbar-container"></div>
+
+    <!-- Main Content - RTL Direction -->
+    <main class="main-content">
+        <!-- Men's Hero Section - مع صورة خلفية -->
+        <section class="men-hero">
+            <div class="container">
+                <h1 data-translate="menCollection">Men's Collection</h1>
+                <p data-translate="menSubtitle">Discover our latest trends and timeless classics</p>
+                <div class="category-tabs">
+                    <a href="#new" class="category-tab active" data-translate="newArrivals">New Arrivals</a>
+                    <a href="#formal" class="category-tab" data-translate="formalCollection">Formal Collection</a>
+                    <a href="#casual" class="category-tab" data-translate="casualWear">Casual Wear</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Arrivals Section -->
+        <section class="products-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" id="new" data-translate="newArrivals">New Arrivals</h2>
+                    <p class="section-subtitle" data-translate="newArrivalsSubtitle">Latest additions to our men's collection</p>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="products-grid" id="newArrivalsGrid">
+                    <!-- سيتم إضافة المنتجات هنا بواسطة JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Formal Collection Section - تم التعديل -->
+        <section class="formal-collection">
+            <div class="container">
+                <div class="collection-header">
+                    <h2 class="collection-title" id="formal" data-translate="formalCollection">Formal Collection</h2>
+                    <p class="collection-subtitle" data-translate="formalSubtitle">Elegant and professional styles for every occasion</p>
+                    <div class="collection-divider"></div>
+                </div>
+                
+                <div class="products-grid" id="formalGrid">
+                    <!-- سيتم إضافة المنتجات هنا بواسطة JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Casual Wear Section -->
+        <section class="products-section" id="casual">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-translate="casualWear">Casual Wear</h2>
+                    <p class="section-subtitle" data-translate="casualSubtitle">Comfortable and stylish everyday outfits</p>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="products-grid" id="casualGrid">
+                    <!-- سيتم إضافة المنتجات هنا بواسطة JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2 class="newsletter-title" data-translate="stayUpdated">Stay Updated</h2>
+                    <p class="newsletter-subtitle" data-translate="newsletterSubtitle">Subscribe to get special offers and updates</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" class="newsletter-input" data-translate-placeholder="enterEmail">
+                        <button class="newsletter-btn" data-translate="subscribe">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <h3 class="footer-title">STYLESHOP</h3>
+                        <p class="footer-text" data-translate="footerText">Your destination for premium fashion</p>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-subtitle" data-translate="shop">Shop</h4>
+                        <ul class="footer-links">
+                            <li><a href="women.html" data-translate="women">Women</a></li>
+                            <li><a href="men.html" data-translate="men">Men</a></li>
+                            <li><a href="girls.html" data-translate="girls">Girls</a></li>
+                            <li><a href="boys.html" data-translate="boys">Boys</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-subtitle" data-translate="help">Help</h4>
+                        <ul class="footer-links">
+                            <li><a href="#" data-translate="contactUs">Contact Us</a></li>
+                            <li><a href="#" data-translate="shipping">Shipping</a></li>
+                            <li><a href="#" data-translate="returns">Returns</a></li>
+                            <li><a href="#" data-translate="faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-subtitle" data-translate="followUs">Follow Us</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Pinterest</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p data-translate="copyright">&copy; 2025 StyleShop. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+     <script src="navbar.js"></script>
+<script src="cart.js"></script>
+    <script>
+        // نظام الترجمة
+        const translations = {
+            en: {
+                // Navigation
+                women: "Women",
+                men: "Men", 
+                girls: "Girls",
+                boys: "Boys",
+                babies: "Babies",
+                offers: "Offers",
+                searchPlaceholder: "Search products...",
+                
+                // Hero Section
+                menCollection: "Men's Collection",
+                menSubtitle: "Discover our latest trends and timeless classics",
+                
+                // Category Tabs
+                newArrivals: "New Arrivals",
+                formalCollection: "Formal Collection",
+                casualWear: "Casual Wear",
+                
+                // Sections
+                newArrivalsSubtitle: "Latest additions to our men's collection",
+                formalSubtitle: "Elegant and professional styles for every occasion",
+                casualSubtitle: "Comfortable and stylish everyday outfits",
+                
+                // Newsletter
+                stayUpdated: "Stay Updated",
+                newsletterSubtitle: "Subscribe to get special offers and updates",
+                enterEmail: "Enter your email",
+                subscribe: "Subscribe",
+                
+                // Footer
+                shop: "Shop",
+                help: "Help", 
+                contactUs: "Contact Us",
+                shipping: "Shipping",
+                returns: "Returns",
+                faq: "FAQ",
+                followUs: "Follow Us",
+                footerText: "Your destination for premium fashion",
+                copyright: "&copy; 2025 StyleShop. All rights reserved."
+            },
+            ar: {
+                // Navigation
+                women: "نسائي",
+                men: "رجالي",
+                girls: "بنات", 
+                boys: "أولاد",
+                babies: "أطفال",
+                offers: "العروض",
+                searchPlaceholder: "ابحث عن المنتجات...",
+                
+                // Hero Section
+                menCollection: "مجموعة الرجال",
+                menSubtitle: "اكتشف أحدث صيحات الموضة والكلاسيكيات الخالدة",
+                
+                // Category Tabs
+                newArrivals: "المنتجات الجديدة",
+                formalCollection: "المجموعة الرسمية",
+                casualWear: "الملابس اليومية",
+                
+                // Sections
+                newArrivalsSubtitle: "أحدث الإضافات إلى مجموعة الرجال لدينا",
+                formalSubtitle: "أنماط أنيقة واحترافية لكل المناسبات",
+                casualSubtitle: "ملابس يومية مريحة وأنيقة",
+                
+                // Newsletter
+                stayUpdated: "ابقَ على اطلاع",
+                newsletterSubtitle: "اشترك للحصول على عروض خاصة وتحديثات",
+                enterEmail: "أدخل بريدك الإلكتروني",
+                subscribe: "اشتراك",
+                
+                // Footer
+                shop: "تسوق",
+                help: "مساعدة", 
+                contactUs: "اتصل بنا",
+                shipping: "الشحن",
+                returns: "الإرجاع",
+                faq: "الأسئلة الشائعة",
+                followUs: "تابعنا",
+                footerText: "وجهتك للأزياء المتميزة",
+                copyright: "&copy; 2025 StyleShop. جميع الحقوق محفوظة."
+            }
+        };
+
+        // بيانات المنتجات للرجال
+        const productsData = {
+            "new-arrivals": [
+                {
+                    id: 1,
+                    name: "Classic Men's Blazer",
+                    price: 129.99,
+                    oldPrice: 159.99,
+                    isNew: true,
+                    image: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                },
+                {
+                    id: 2,
+                    name: "Premium Leather Jacket",
+                    price: 199.99,
+                    oldPrice: null,
+                    isNew: true,
+                    image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                },
+                {
+                    id: 3,
+                    name: "Designer Men's Watch",
+                    price: 299.99,
+                    oldPrice: 399.99,
+                    isNew: true,
+                    image: "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                },
+                {
+                    id: 4,
+                    name: "Slim Fit Jeans",
+                    price: 79.99,
+                    oldPrice: null,
+                    isNew: true,
+                    image: "https://images.unsplash.com/photo-1542272604-787c3835535d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                },
+                {
+                    id: 5,
+                    name: "Casual Summer Shirt",
+                    price: 49.99,
+                    oldPrice: 69.99,
+                    isNew: true,
+                    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                },
+                {
+                    id: 6,
+                    name: "Sports Sneakers",
+                    price: 89.99,
+                    oldPrice: null,
+                    isNew: true,
+                    image: "https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                }
+            ],
+            "formal": [
+                {
+                    id: 7,
+                    name: "Executive Business Suit",
+                    price: 399.99,
+                    oldPrice: 499.99,
+                    isNew: false,
+                    image: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                },
+                {
+                    id: 8,
+                    name: "Formal Dress Shirt",
+                    price: 59.99,
+                    oldPrice: null,
+                    isNew: false,
+                    image: "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                },
+                {
+                    id: 9,
+                    name: "Leather Dress Shoes",
+                    price: 149.99,
+                    oldPrice: null,
+                    isNew: false,
+                    image: "https://images.unsplash.com/photo-1542280756-74b2f55e73ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                },
+                {
+                    id: 10,
+                    name: "Silk Necktie",
+                    price: 39.99,
+                    oldPrice: null,
+                    isNew: false,
+                    image: "https://images.unsplash.com/photo-1589310243389-96a5483213a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                },
+                {
+                    id: 11,
+                    name: "Wool Overcoat",
+                    price: 229.99,
+                    oldPrice: 299.99,
+                    isNew: true,
+                    image: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                },
+                {
+                    id: 12,
+                    name: "Formal Trousers",
+                    price: 89.99,
+                    oldPrice: null,
+                    isNew: false,
+                    image: "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                }
+            ],
+            "casual": [
+                {
+                    id: 13,
+                    name: "Cotton T-Shirt Pack",
+                    price: 34.99,
+                    oldPrice: 49.99,
+                    isNew: false,
+                    image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                },
+                {
+                    id: 14,
+                    name: "Denim Jacket",
+                    price: 119.99,
+                    oldPrice: null,
+                    isNew: false,
+                    image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                },
+                {
+                    id: 15,
+                    name: "Casual Shorts",
+                    price: 44.99,
+                    oldPrice: 59.99,
+                    isNew: false,
+                    image: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                },
+                {
+                    id: 16,
+                    name: "Hooded Sweatshirt",
+                    price: 69.99,
+                    oldPrice: null,
+                    isNew: false,
+                    image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                }
+            ]
+        };
+
+        // دالة لإنشاء بطاقة منتج
+        function createProductCard(product) {
+            return `
+                <div class="product-card animate-fade-in" data-id="${product.id}">
+                    <div class="product-image">
+                        <img src="${product.image}" alt="${product.name}">
+                        ${product.isNew ? '<div class="product-badge">NEW</div>' : ''}
+                        <div class="product-overlay"></div>
+                        <button class="product-cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">${product.name}</h3>
+                        <div class="product-price">
+                            <span class="product-price-current">$${product.price}</span>
+                            ${product.oldPrice ? `<span class="product-price-original">$${product.oldPrice}</span>` : ''}
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // دالة لعرض المنتجات في الشبكة
+      function renderProducts(category, containerId) {
+    const container = document.getElementById(containerId);
+    const products = productsData[category];
+    
+    if (container && products) {
+        container.innerHTML = products.map(product => createProductCard(product)).join('');
+        
+        // إعادة ربط أزرار الـ cart
+        setTimeout(() => {
+            if (window.cartManager) {
+                window.cartManager.rebindCartButtons();
+            }
+        }, 100);
+    }
+}
+
+        // دالة الترجمة
+        function translatePage(lang) {
+            const elements = document.querySelectorAll('[data-translate]');
+            const placeholders = document.querySelectorAll('[data-translate-placeholder]');
+            
+            // تحديث النصوص
+            elements.forEach(element => {
+                const key = element.getAttribute('data-translate');
+                if (translations[lang][key]) {
+                    element.textContent = translations[lang][key];
+                }
+            });
+            
+            // تحديث النصوص في العناصر الخاصة مثل innerHTML
+            const copyright = document.querySelector('[data-translate="copyright"]');
+            if (copyright && translations[lang]['copyright']) {
+                copyright.innerHTML = translations[lang]['copyright'];
+            }
+            
+            // تحديث العناصر النائبة
+            placeholders.forEach(element => {
+                const key = element.getAttribute('data-translate-placeholder');
+                if (translations[lang][key]) {
+                    element.placeholder = translations[lang][key];
+                }
+            });
+            
+            // تحديث اتجاه الصفحة
+            document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+            document.documentElement.setAttribute('lang', lang);
+            
+            // تحديث نص زر اللغة
+            const langBtn = document.getElementById('languageBtn');
+            if (langBtn) {
+                const langText = langBtn.querySelector('.lang-text');
+                langText.textContent = lang === 'en' ? 'AR' : 'EN';
+            }
+            
+            // حفظ اللغة في localStorage
+            localStorage.setItem('preferredLanguage', lang);
+        }
+
+        // دالة تبديل اللغة
+        function toggleLanguage() {
+            const currentLang = document.documentElement.getAttribute('lang') || 'en';
+            const newLang = currentLang === 'ar' ? 'en' : 'ar';
+            translatePage(newLang);
+        }
+
+        // دالة تبديل وضع الظلام
+        function toggleDarkMode() {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            // حفظ الوضع في localStorage
+            localStorage.setItem('theme', newTheme);
+            
+            // تطبيق الوضع الجديد
+            applyTheme(newTheme);
+        }
+
+        // دالة تطبيق الوضع
+        function applyTheme(theme) {
+            document.documentElement.setAttribute('data-theme', theme);
+            
+            // تحديث أيقونة زر Dark Mode
+            const darkModeBtn = document.getElementById('darkModeBtn');
+            if (darkModeBtn) {
+                const icon = darkModeBtn.querySelector('i');
+                if (theme === 'dark') {
+                    icon.className = 'fas fa-sun';
+                } else {
+                    icon.className = 'fas fa-moon';
+                }
+            }
+        }
+
+        // تهيئة الصفحة عند التحميل
+        document.addEventListener('DOMContentLoaded', function() {
+            // تهيئة اللغة
+            const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+            translatePage(savedLang);
+            
+            // تهيئة وضع الظلام
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            applyTheme(savedTheme);
+            
+            // عرض المنتجات في الأقسام المختلفة
+            renderProducts('new-arrivals', 'newArrivalsGrid');
+            renderProducts('formal', 'formalGrid');
+            renderProducts('casual', 'casualGrid');
+            
+            // إضافة مستمعي الأحداث للأزرار
+            document.addEventListener('click', function(e) {
+                if (e.target.classList.contains('product-cart-btn') || e.target.closest('.product-cart-btn')) {
+                    const button = e.target.classList.contains('product-cart-btn') ? e.target : e.target.closest('.product-cart-btn');
+                    const productCard = button.closest('.product-card');
+                    const productId = productCard.getAttribute('data-id');
+                    const currentLang = document.documentElement.getAttribute('lang');
+                    const message = currentLang === 'ar' ? 'تمت إضافة المنتج إلى سلة التسوق' : 'Product added to cart';
+                    alert(message);
+                }
+                
+                if (e.target.classList.contains('product-card') || e.target.closest('.product-card')) {
+                    const card = e.target.classList.contains('product-card') ? e.target : e.target.closest('.product-card');
+                    const productId = card.getAttribute('data-id');
+                    const currentLang = document.documentElement.getAttribute('lang');
+                    const message = currentLang === 'ar' ? `تفاصيل المنتج: ${productId}` : `Product Details: ${productId}`;
+                    alert(message);
+                }
+            });
+            
+            // إضافة مستمع حدث لزر الاشتراك
+            const newsletterBtn = document.querySelector('.newsletter-btn');
+            if (newsletterBtn) {
+                newsletterBtn.addEventListener('click', function() {
+                    const input = this.parentElement.querySelector('.newsletter-input');
+                    const currentLang = document.documentElement.getAttribute('lang');
+                    
+                    if (input.value) {
+                        const message = currentLang === 'ar' 
+                            ? `شكرًا على اشتراكك! سنرسل التحديثات إلى ${input.value}`
+                            : `Thank you for subscribing! We'll send updates to ${input.value}`;
+                        alert(message);
+                        input.value = '';
+                    } else {
+                        const message = currentLang === 'ar' 
+                            ? 'يرجى إدخال بريدك الإلكتروني'
+                            : 'Please enter your email address';
+                        alert(message);
+                    }
+                });
+            }
+            
+            // إعداد القائمة المتنقلة
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+            
+            if (mobileMenuBtn && mobileMenu) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    const isOpen = mobileMenu.style.display === 'block';
+                    mobileMenu.style.display = isOpen ? 'none' : 'block';
+                    mobileMenuBtn.innerHTML = isOpen ? '<i class="fas fa-bars"></i>' : '<i class="fas fa-times"></i>';
+                });
+            }
+            
+            // إضافة مستمعي الأحداث للأزرار
+            const languageBtn = document.getElementById('languageBtn');
+            if (languageBtn) {
+                languageBtn.addEventListener('click', toggleLanguage);
+            }
+            
+            const darkModeBtn = document.getElementById('darkModeBtn');
+            if (darkModeBtn) {
+                darkModeBtn.addEventListener('click', toggleDarkMode);
+            }
+            
+            // تحديث التبويبات النشطة عند التمرير
+            window.addEventListener('scroll', function() {
+                const sections = document.querySelectorAll('section[id]');
+                const navLinks = document.querySelectorAll('.category-tab');
+                
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (scrollY >= (sectionTop - 100)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${current}`) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

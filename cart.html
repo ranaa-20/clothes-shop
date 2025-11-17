@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - StyleShop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+     <div id="navbar-container"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="cart-container">
+            <div class="cart-header">
+                <h1 class="cart-title">Shopping Cart</h1>
+                <p class="cart-subtitle">Review your items and proceed to checkout</p>
+            </div>
+
+            <div class="cart-content">
+                <!-- Cart Items Section -->
+                <div class="cart-items">
+                    <div class="cart-items-header">
+                        <h2 class="cart-items-title">Your Items</h2>
+                        <span class="cart-items-count" id="cartItemsCount">0 items</span>
+                    </div>
+
+                    <div id="cartItemsContainer">
+                        <!-- Cart items will be loaded here dynamically -->
+                    </div>
+                </div>
+
+                <!-- Cart Summary Section -->
+                <div class="cart-summary">
+                    <h2 class="summary-title">Order Summary</h2>
+                    
+                    <div class="summary-row">
+                        <span class="summary-label">Subtotal</span>
+                        <span class="summary-value" id="subtotal">$0.00</span>
+                    </div>
+                    
+                    <div class="summary-row">
+                        <span class="summary-label">Shipping</span>
+                        <span class="summary-value" id="shipping">$0.00</span>
+                    </div>
+                    
+                    <div class="summary-row">
+                        <span class="summary-label">Tax</span>
+                        <span class="summary-value" id="tax">$0.00</span>
+                    </div>
+                    
+                    <div class="summary-total">
+                        <span class="total-label">Total</span>
+                        <span class="total-value" id="total">$0.00</span>
+                    </div>
+
+                    <button class="checkout-btn" id="checkoutBtn" disabled>
+                        Proceed to Checkout
+                    </button>
+
+                    <a href="index.html" class="continue-shopping-link">Continue Shopping</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<script src="navbar.js"></script>
+<script src="cart.js"></script>
+
+
+</body>
+</html>

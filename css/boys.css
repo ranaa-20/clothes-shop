@@ -1,0 +1,894 @@
+        :root {
+            /* Primary Colors */
+            --background: 0 0% 96%;
+            --foreground: 210 100% 10%;
+            
+            --card: 0 0% 100%;
+            --card-foreground: 210 100% 10%;
+            
+            --primary: 210 75% 18%;
+            --primary-foreground: 0 0% 98%;
+            
+            --secondary: 203 56% 25%;
+            --secondary-foreground: 0 0% 98%;
+            
+            --muted: 0 0% 96%;
+            --muted-foreground: 210 20% 45%;
+            
+            --accent: 193 60% 27%;
+            --accent-foreground: 0 0% 98%;
+            
+            --border: 210 30% 85%;
+            --input: 210 30% 90%;
+            
+            /* E-commerce specific colors */
+            --women: 340 75% 55%;
+            --women-foreground: 0 0% 100%;
+            
+            --men: 210 75% 18%;
+            --men-foreground: 0 0% 100%;
+            
+            --girls: 320 70% 60%;
+            --girls-foreground: 0 0% 100%;
+            
+            --boys: 200 80% 45%;
+            --boys-foreground: 0 0% 100%;
+            
+            --babies: 45 90% 65%;
+            --babies-foreground: 210 100% 10%;
+            
+            --offers: 15 85% 55%;
+            --offers-foreground: 0 0% 100%;
+            
+            /* Transitions */
+            --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-fast: all 0.15s ease;
+            
+            /* Shadows */
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        /* Convert HSL to CSS */
+        :root {
+            --bg-color: hsl(var(--background));
+            --text-color: hsl(var(--foreground));
+            --card-bg: hsl(var(--card));
+            --card-text: hsl(var(--card-foreground));
+            --primary-color: hsl(var(--primary));
+            --primary-text: hsl(var(--primary-foreground));
+            --secondary-color: hsl(var(--secondary));
+            --secondary-text: hsl(var(--secondary-foreground));
+            --muted-bg: hsl(var(--muted));
+            --muted-text: hsl(var(--muted-foreground));
+            --accent-color: hsl(var(--accent));
+            --accent-text: hsl(var(--accent-foreground));
+            --border-color: hsl(var(--border));
+            --input-bg: hsl(var(--input));
+            
+            --women-color: hsl(var(--women));
+            --women-text: hsl(var(--women-foreground));
+            --men-color: hsl(var(--men));
+            --men-text: hsl(var(--men-foreground));
+            --girls-color: hsl(var(--girls));
+            --girls-text: hsl(var(--girls-foreground));
+            --boys-color: hsl(var(--boys));
+            --boys-text: hsl(var(--boys-foreground));
+            --babies-color: hsl(var(--babies));
+            --babies-text: hsl(var(--babies-foreground));
+            --offers-color: hsl(var(--offers));
+            --offers-text: hsl(var(--offers-foreground));
+        }
+
+        /* Dark Mode Variables */
+        [data-theme="dark"] {
+            --background: 210 100% 5%;
+            --foreground: 0 0% 98%;
+            
+            --card: 210 100% 8%;
+            --card-foreground: 0 0% 98%;
+            
+            --primary: 210 75% 18%;
+            --primary-foreground: 0 0% 98%;
+            
+            --secondary: 203 56% 25%;
+            --secondary-foreground: 0 0% 98%;
+            
+            --muted: 210 100% 10%;
+            --muted-foreground: 210 20% 70%;
+            
+            --accent: 193 60% 27%;
+            --accent-foreground: 0 0% 98%;
+            
+            --border: 210 30% 20%;
+            --input: 210 30% 15%;
+            
+            --women: 340 75% 55%;
+            --women-foreground: 0 0% 100%;
+            
+            --men: 210 75% 18%;
+            --men-foreground: 0 0% 100%;
+            
+            --girls: 320 70% 60%;
+            --girls-foreground: 0 0% 100%;
+            
+            --boys: 200 80% 45%;
+            --boys-foreground: 0 0% 100%;
+            
+            --babies: 45 90% 65%;
+            --babies-foreground: 210 100% 10%;
+            
+            --offers: 15 85% 55%;
+            --offers-foreground: 0 0% 100%;
+        }
+
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            direction: rtl;
+            text-align: right;
+            transition: var(--transition-smooth);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        button {
+            cursor: pointer;
+            border: none;
+            background: none;
+            font-family: inherit;
+        }
+
+        input {
+            font-family: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* Helper Classes */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .bg-muted {
+            background-color: var(--muted-bg);
+        }
+
+        /* Navigation Bar - LTR Direction */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background-color: var(--card-bg);
+            box-shadow: var(--shadow-md);
+            transition: var(--transition-smooth);
+            direction: ltr; /* تغيير الاتجاه لليسار لليمين */
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 4rem;
+            direction: ltr; /* تغيير الاتجاه لليسار لليمين */
+        }
+
+        .nav-logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            margin-right: auto; /* دفع الشعار إلى أقصى اليسار */
+        }
+
+        .nav-logo span {
+            color: var(--accent-color);
+        }
+
+        .nav-menu {
+            display: none;
+            margin: 0 auto; /* توسيط القائمة */
+        }
+
+        .nav-link {
+            position: relative;
+            padding: 0.5rem 0.75rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--text-color);
+            transition: var(--transition-smooth);
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: var(--primary-color);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0; /* تغيير من اليمين لليسار */
+            width: 100%;
+            height: 2px;
+            background-color: var(--primary-color);
+            transform: scaleX(0);
+            transform-origin: left; /* تغيير من اليمين لليسار */
+            transition: transform 0.3s ease;
+        }
+
+        .nav-link:hover::after, .nav-link.active::after {
+            transform: scaleX(1);
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-left: auto; /* دفع العناصر إلى أقصى اليمين */
+        }
+
+        .nav-search {
+            display: none;
+            flex: 1;
+            max-width: 28rem;
+        }
+
+        .search-container {
+            position: relative;
+            width: 100%;
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 0.75rem; /* تغيير من اليمين لليسار */
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 0.875rem;
+            color: var(--muted-text);
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 0.5rem 0.75rem 0.5rem 2.5rem; /* تغيير padding */
+            background-color: var(--muted-bg);
+            border: none;
+            border-radius: 0.375rem;
+            font-size: 0.875rem;
+            color: var(--text-color);
+            transition: var(--transition-smooth);
+        }
+
+        .search-input:focus {
+            outline: none;
+            box-shadow: 0 0 0 1px var(--primary-color);
+        }
+
+        /* Dark Mode Button */
+        .dark-mode-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.5rem;
+            color: var(--text-color);
+            border-radius: 0.375rem;
+            transition: var(--transition-smooth);
+        }
+
+        .dark-mode-btn:hover {
+            background-color: var(--muted-bg);
+            color: var(--primary-color);
+        }
+
+        /* زر اللغة */
+        .language-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background-color: var(--muted-bg);
+            color: var(--text-color);
+            border-radius: 0.375rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: var(--transition-smooth);
+        }
+
+        .language-btn:hover {
+            background-color: var(--border-color);
+        }
+
+        .lang-text {
+            font-weight: 600;
+        }
+
+        .cart-btn {
+            display: none;
+            padding: 0.5rem;
+            color: var(--text-color);
+            transition: var(--transition-smooth);
+        }
+
+        .cart-btn:hover {
+            color: var(--primary-color);
+        }
+
+        .mobile-menu-btn {
+            display: block;
+            padding: 0.5rem;
+            color: var(--text-color);
+        }
+
+        .mobile-menu {
+            display: none;
+            padding: 1rem 0;
+            border-top: 1px solid var(--border-color);
+            animation: fadeIn 0.3s ease;
+            direction: ltr; /* تغيير الاتجاه لليسار لليمين */
+        }
+
+        .mobile-search {
+            margin-bottom: 1rem;
+        }
+
+        .mobile-links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .mobile-link {
+            display: block;
+            padding: 0.5rem 1rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--text-color);
+            transition: var(--transition-smooth);
+            border-radius: 0.375rem;
+        }
+
+        .mobile-link:hover, .mobile-link.active {
+            background-color: var(--muted-bg);
+        }
+
+        /* Main Content */
+        .main-content {
+            margin-top: 4rem;
+            direction: rtl; /* المحتوى الرئيسي يبقى من اليمين لليسار */
+        }
+
+        /* Boys Hero Section - مع صورة خلفية جديدة */
+        .boys-hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                              url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkRWoP7Ylpbgkm4QVp4wRkVGAzr8szjO_GbA&s');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 120px 0;
+            text-align: center;
+            margin-bottom: 60px;
+            color: white;
+            position: relative;
+        }
+        
+        .boys-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(30, 144, 255, 0.4) 0%, rgba(0, 191, 255, 0.4) 100%);
+            z-index: 1;
+        }
+        
+        .boys-hero .container {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .boys-hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .boys-hero p {
+            font-size: 1.3rem;
+            max-width: 600px;
+            margin: 0 auto 40px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            opacity: 0.9;
+        }
+        
+        .category-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 50px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            padding-bottom: 20px;
+        }
+        
+        .category-tab {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.8);
+            padding: 12px 0;
+            cursor: pointer;
+            position: relative;
+            transition: var(--transition-smooth);
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .category-tab:hover {
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .category-tab.active {
+            color: white;
+        }
+        
+        .category-tab.active::after {
+            content: '';
+            position: absolute;
+            bottom: -21px;
+            right: 0;
+            width: 100%;
+            height: 3px;
+            background-color: white;
+            box-shadow: 0 2px 8px rgba(255, 255, 255, 0.5);
+        }
+
+        /* Products Sections */
+        .products-section {
+            padding: 4rem 0;
+            transition: var(--transition-smooth);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            margin-top: 3rem;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .section-title {
+            font-size: 2.25rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            color: var(--text-color);
+        }
+
+        .section-subtitle {
+            font-size: 1.125rem;
+            color: var(--muted-text);
+            margin-bottom: 1rem;
+        }
+
+        .section-divider {
+            width: 6rem;
+            height: 0.25rem;
+            background: linear-gradient(to left, var(--primary-color), var(--accent-color), var(--secondary-color));
+            margin: 0 auto;
+            border-radius: 0.125rem;
+        }
+
+        /* Products Grid */
+        .products-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Product Card */
+        .product-card {
+            background-color: var(--card-bg);
+            border-radius: 0.5rem;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition-smooth);
+            cursor: pointer;
+        }
+
+        .product-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 12px 24px -8px rgba(12, 43, 78, 0.25);
+        }
+
+        .product-image {
+            position: relative;
+            overflow: hidden;
+            background-color: var(--muted-bg);
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 20rem;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .product-card:hover .product-image img {
+            transform: scale(1.1);
+        }
+
+        .product-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem; /* تغيير من اليسار لليمين */
+            background-color: var(--offers-color);
+            color: var(--offers-text);
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .product-overlay {
+            position: absolute;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0);
+            transition: background-color 0.3s ease;
+        }
+
+        .product-card:hover .product-overlay {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        .product-cart-btn {
+            position: absolute;
+            bottom: 1rem;
+            left: 1rem; /* تغيير من اليمين لليسار */
+            opacity: 0;
+            padding: 0.5rem;
+            background-color: var(--primary-color);
+            color: var(--primary-text);
+            border-radius: 0.375rem;
+            transition: opacity 0.3s ease;
+        }
+
+        .product-card:hover .product-cart-btn {
+            opacity: 1;
+        }
+
+        .product-cart-btn:hover {
+            background-color: rgba(var(--primary-color), 0.9);
+        }
+
+        .product-info {
+            padding: 1rem;
+            background-color: var(--card-bg);
+        }
+
+        .product-name {
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--card-text);
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .product-price {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .product-price-current {
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .product-price-original {
+            font-size: 0.875rem;
+            color: var(--muted-text);
+            text-decoration: line-through;
+        }
+
+        /* Sports Collection Section */
+        .sports-collection {
+            background-color: var(--muted-bg);
+            padding: 80px 0;
+            transition: var(--transition-smooth);
+        }
+
+        .collection-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .collection-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-color);
+            margin-bottom: 15px;
+        }
+
+        .collection-subtitle {
+            font-size: 1.1rem;
+            color: var(--muted-text);
+            margin-bottom: 20px;
+        }
+
+        .collection-divider {
+            width: 80px;
+            height: 3px;
+            background-color: var(--primary-color);
+            margin: 0 auto;
+        }
+
+        /* Newsletter Section */
+        .newsletter-section {
+            padding: 5rem 0;
+            background: linear-gradient(to left, var(--primary-color), var(--secondary-color), var(--accent-color));
+            color: var(--primary-text);
+            text-align: center;
+        }
+
+        .newsletter-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .newsletter-title {
+            font-size: 2.25rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .newsletter-subtitle {
+            font-size: 1.125rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .newsletter-form {
+            max-width: 28rem;
+            margin: 0 auto;
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .newsletter-input {
+            flex: 1;
+            padding: 0.75rem 1rem;
+            border-radius: 0.5rem;
+            background-color: var(--card-bg);
+            color: var(--text-color);
+            border: none;
+        }
+
+        .newsletter-input:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px var(--accent-color);
+        }
+
+        .newsletter-btn {
+            padding: 0.75rem 1.5rem;
+            background-color: var(--card-bg);
+            color: var(--card-text);
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: var(--transition-smooth);
+        }
+
+        .newsletter-btn:hover {
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--primary-color);
+            color: var(--primary-text);
+            padding: 3rem 0;
+            transition: var(--transition-smooth);
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-column h3,
+        .footer-column h4 {
+            margin-bottom: 1rem;
+        }
+
+        .footer-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        .footer-subtitle {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .footer-text {
+            opacity: 0.8;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .footer-links a {
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            opacity: 1;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            padding-top: 2rem;
+            text-align: center;
+            opacity: 0.8;
+        }
+               /* Cart Button with Badge */
+.cart-btn {
+    position: relative;
+    display: none;
+    padding: 0.5rem;
+    color: var(--text-color);
+    transition: var(--transition-smooth);
+}
+
+.cart-btn:hover {
+    color: var(--primary-color);
+}
+
+.cart-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: var(--offers-color);
+    color: var(--offers-text);
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    transition: var(--transition-smooth);
+}
+
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 0.5s ease;
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Media Queries */
+        @media (min-width: 640px) {
+            .products-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 768px) {
+            .nav-search {
+                display: flex;
+            }
+            
+            .cart-btn {
+                display: block;
+            }
+            
+            .products-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .footer-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .nav-menu {
+                display: flex;
+                align-items: center;
+                gap: 1.5rem;
+                margin: 0 auto;
+            }
+            
+            .mobile-menu-btn {
+                display: none;
+            }
+            
+            .products-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .boys-hero {
+                padding: 80px 0;
+            }
+            
+            .boys-hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .boys-hero p {
+                font-size: 1.1rem;
+            }
+            
+            .category-tabs {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }

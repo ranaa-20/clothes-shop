@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids & Babies - StyleShop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/kids&babies.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+       <div id="navbar-container"></div>
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Kids & Babies Collection</h1>
+                <p class="hero-subtitle">Adorable outfits for your little ones</p>
+                <button class="hero-btn" id="exploreBtn">Explore Collection</button>
+            </div>
+        </section>
+
+        <!-- Category Navigation -->
+        <section class="category-nav">
+            <div class="category-container">
+                <button class="category-btn active" id="allBtn">All</button>
+                <button class="category-btn" id="girlsBtn">Girls</button>
+                <button class="category-btn" id="boysBtn">Boys</button>
+                <button class="category-btn" id="babiesBtn">Babies</button>
+                <button class="category-btn" id="arrivalsBtn">New Arrivals</button>
+                <a href="offers.html" class="category-btn" id="saleBtn">Sale</a>
+            </div>
+        </section>
+
+        <!-- Girls Collection -->
+        <section class="products-section" id="girls-collection">
+            <div class="section-header">
+                <h2 class="section-title">Girls Collection</h2>
+                <p class="section-subtitle">Beautiful outfits for your little princess</p>
+                <div class="section-divider"></div>
+            </div>
+            <div class="products-grid" id="girlsProducts">
+                <!-- Girls products will be added here via JavaScript -->
+            </div>
+        </section>
+
+        <!-- Boys Collection -->
+        <section class="products-section bg-muted" id="boys-collection">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Boys Collection</h2>
+                    <p class="section-subtitle">Cool and comfortable wear for active boys</p>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="products-grid" id="boysProducts">
+                    <!-- Boys products will be added here via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Babies Collection -->
+        <section class="products-section" id="babies-collection">
+            <div class="section-header">
+                <h2 class="section-title">Babies Collection</h2>
+                <p class="section-subtitle">Soft and safe outfits for your little ones</p>
+                <div class="section-divider"></div>
+            </div>
+            <div class="products-grid" id="babiesProducts">
+                <!-- Babies products will be added here via JavaScript -->
+            </div>
+        </section>
+
+        <!-- New Arrivals -->
+        <section class="products-section bg-muted" id="new-arrivals">
+            <div class="section-header">
+                <h2 class="section-title">New Arrivals</h2>
+                <p class="section-subtitle">Fresh styles just in for kids and babies</p>
+                <div class="section-divider"></div>
+            </div>
+            <div class="products-grid" id="newArrivals">
+                <!-- New arrivals will be added here via JavaScript -->
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter-section">
+            <div class="newsletter-content">
+                <h2 class="newsletter-title">Stay Updated</h2>
+                <p class="newsletter-subtitle">Subscribe to get special offers and updates</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" class="newsletter-input">
+                    <button class="newsletter-btn">Subscribe</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <h3 class="footer-title">STYLESHOP</h3>
+                        <p class="footer-text">Your destination for premium fashion</p>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-subtitle">Shop</h4>
+                        <ul class="footer-links">
+                            <li><a href="women.html">Women</a></li>
+                            <li><a href="men.html">Men</a></li>
+                            <li><a href="girls.html">Girls</a></li>
+                            <li><a href="boys.html">Boys</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-subtitle">Help</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-subtitle">Follow Us</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Pinterest</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 StyleShop. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+   <script src="navbar.js"></script>
+<script src="cart.js"></script>
+    <script>
+        // إعدادات اللغة
+        const translations = {
+            en: {
+                // Navigation
+                women: "Women",
+                men: "Men", 
+                girls: "Girls",
+                boys: "Boys",
+                babies: "Babies",
+                offers: "Offers",
+                searchPlaceholder: "Search products...",
+                
+                // Hero Section
+                heroTitle: "Kids & Babies Collection",
+                heroSubtitle: "Adorable outfits for your little ones",
+                exploreCollection: "Explore Collection",
+                
+                // Categories
+                all: "All",
+                girlsCategory: "Girls",
+                boysCategory: "Boys",
+                babiesCategory: "Babies",
+                newArrivals: "New Arrivals",
+                sale: "Sale",
+                
+                // Products
+                girlsCollection: "Girls Collection",
+                girlsSubtitle: "Beautiful outfits for your little princess",
+                boysCollection: "Boys Collection",
+                boysSubtitle: "Cool and comfortable wear for active boys",
+                babiesCollection: "Babies Collection",
+                babiesSubtitle: "Soft and safe outfits for your little ones",
+                newArrivalsTitle: "New Arrivals",
+                newArrivalsSubtitle: "Fresh styles just in for kids and babies",
+                
+                // Newsletter
+                stayUpdated: "Stay Updated",
+                newsletterSubtitle: "Subscribe to get special offers and updates",
+                enterEmail: "Enter your email",
+                subscribe: "Subscribe",
+                
+                // Footer
+                shop: "Shop",
+                help: "Help", 
+                contactUs: "Contact Us",
+                shipping: "Shipping",
+                returns: "Returns",
+                faq: "FAQ",
+                followUs: "Follow Us",
+                footerText: "Your destination for premium fashion",
+                
+                // Product Names
+                girlsDress: "Floral Girl's Dress",
+                girlsTop: "Girls Casual Top",
+                girlsJeans: "Girls Skinny Jeans",
+                girlsShoes: "Sparkly Girls Shoes",
+                girlsSet: "Girls Party Set",
+                girlsJacket: "Girls Denim Jacket",
+                girlsSkirt: "Tutu Skirt for Girls",
+                girlsHoodie: "Girls Pink Hoodie",
+                
+                boysHoodie: "Boys Sports Hoodie",
+                boysShirt: "Boys Casual Shirt",
+                boysJeans: "Boys Denim Jeans",
+                boysShoes: "Boys Sneakers",
+                boysSet: "Boys Active Set",
+                boysJacket: "Boys Winter Jacket",
+                boysShorts: "Boys Cargo Shorts",
+                boysTshirt: "Boys Graphic T-Shirt",
+                
+                babyRomper: "Soft Baby Romper",
+                babySet: "Baby Gift Set",
+                babyBodysuit: "Baby Bodysuit",
+                babySleepsuit: "Baby Sleepsuit",
+                babyHat: "Baby Sun Hat",
+                babyShoes: "Baby First Shoes",
+                babyBlanket: "Baby Swaddle Blanket",
+                babyToy: "Baby Plush Toy"
+            },
+            ar: {
+                // Navigation
+                women: "نسائي",
+                men: "رجالي",
+                girls: "بنات", 
+                boys: "أولاد",
+                babies: "أطفال",
+                offers: "العروض",
+                searchPlaceholder: "ابحث عن المنتجات...",
+                
+                // Hero Section
+                heroTitle: "مجموعة الأطفال والرضع",
+                heroSubtitle: "ملابس رائعة لأطفالك الصغار",
+                exploreCollection: "استكشف المجموعة",
+                
+                // Categories
+                all: "الكل",
+                girlsCategory: "بنات",
+                boysCategory: "أولاد",
+                babiesCategory: "رضع",
+                newArrivals: "وصل حديثاً",
+                sale: "تخفيضات",
+                
+                // Products
+                girlsCollection: "مجموعة البنات",
+                girlsSubtitle: "ملابس جميلة لأميرتك الصغيرة",
+                boysCollection: "مجموعة الأولاد",
+                boysSubtitle: "ملابس رائعة ومريحة للأولاد النشطين",
+                babiesCollection: "مجموعة الرضع",
+                babiesSubtitle: "ملابس ناعمة وآمنة لأطفالك الصغار",
+                newArrivalsTitle: "المنتجات الجديدة",
+                newArrivalsSubtitle: "أحدث التصاميم للأطفال والرضع",
+                
+                // Newsletter
+                stayUpdated: "ابقَ على اطلاع",
+                newsletterSubtitle: "اشترك للحصول على عروض خاصة وتحديثات",
+                enterEmail: "أدخل بريدك الإلكتروني",
+                subscribe: "اشتراك",
+                
+                // Footer
+                shop: "تسوق",
+                help: "مساعدة", 
+                contactUs: "اتصل بنا",
+                shipping: "الشحن",
+                returns: "الإرجاع",
+                faq: "الأسئلة الشائعة",
+                followUs: "تابعنا",
+                footerText: "وجهتك للأزياء المتميزة",
+                
+                // Product Names
+                girlsDress: "فستان بناتي مزين بالزهور",
+                girlsTop: "تيشيرت بناتي عادي",
+                girlsJeans: "جينز ضيق للبنات",
+                girlsShoes: "أحذية بناتية لامعة",
+                girlsSet: "طقم حفلات للبنات",
+                girlsJacket: "جاكيت دنيم للبنات",
+                girlsSkirt: "تنورة توتو للبنات",
+                girlsHoodie: "هودي بناتي وردي",
+                
+                boysHoodie: "هودي رياضي للأولاد",
+                boysShirt: "قميص أولاد عادي",
+                boysJeans: "جينز دنيم للأولاد",
+                boysShoes: "حذاء رياضي للأولاد",
+                boysSet: "طقم رياضي للأولاد",
+                boysJacket: "جاكيت شتوي للأولاد",
+                boysShorts: "شورت كارجو للأولاد",
+                boysTshirt: "تيشيرت أولاد مطبوع",
+                
+                babyRomper: "ملابس رضع ناعمة",
+                babySet: "طقم هدايا للرضع",
+                babyBodysuit: "بدلة رضيع",
+                babySleepsuit: "ملابس نوم للرضع",
+                babyHat: "قبعة شمس للرضع",
+                babyShoes: "أحذية أولى للرضع",
+                babyBlanket: "بطانية لف الرضع",
+                babyToy: "لعبة محشوة للرضع"
+            }
+        };
+
+        // بيانات المنتجات للأطفال والرضع
+        const productsData = {
+            girlsProducts: [
+                { 
+                    id: 1, 
+                    image: "https://images.unsplash.com/photo-1581044777550-4cfa60707c03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80", 
+                    nameKey: "girlsDress", 
+                    price: 39.99,
+                    category: "girls"
+                },
+                { 
+                    id: 2, 
+                    image: "https://images.unsplash.com/photo-1519457431-44ccd64a579b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80", 
+                    nameKey: "girlsTop", 
+                    price: 24.99,
+                    category: "girls"
+                },
+                { 
+                    id: 3, 
+                    image: "https://images.unsplash.com/photo-1519238263537-c7ed663a46e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80", 
+                    nameKey: "girlsJeans", 
+                    price: 34.99,
+                    category: "girls"
+                },
+                { 
+                    id: 4, 
+                    image: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80", 
+                    nameKey: "girlsShoes", 
+                    price: 29.99,
+                    category: "girls"
+                },
+                { 
+                    id: 5, 
+                    image: "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80", 
+                    nameKey: "girlsSet", 
+                    price: 49.99,
+                    category: "girls"
+                },
+                { 
+                    id: 6, 
+                    image: "https://images.unsplash.com/photo-1581539250439-c96689b516dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80", 
+                    nameKey: "girlsJacket", 
+                    price: 44.99,
+                    category: "girls"
+                },
+                { 
+                    id: 7, 
+                    image: "https://images.unsplash.com/photo-1549069786-22c69702e7ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80", 
+                    nameKey: "girlsSkirt", 
+                    price: 27.99,
+                    category: "girls"
+                },
+                { 
+                    id: 8, 
+                    image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80", 
+                    nameKey: "girlsHoodie", 
+                    price: 32.99,
+                    category: "girls"
+                }
+            ],
+            boysProducts: [
+                { 
+                    id: 9, 
+                    image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80", 
+                    nameKey: "boysHoodie", 
+                    price: 44.99,
+                    category: "boys"
+                },
+                { 
+                    id: 10, 
+                    image: "https://images.unsplash.com/photo-1581539250439-c96689b516dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80", 
+                    nameKey: "boysShirt", 
+                    price: 29.99,
+                    category: "boys"
+                },
+                { 
+                    id: 11, 
+                    image: "https://images.unsplash.com/photo-1542272604-787c3835535d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80", 
+                    nameKey: "boysJeans", 
+                    price: 39.99,
+                    category: "boys"
+                },
+                { 
+                    id: 12, 
+                    image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80", 
+                    nameKey: "boysShoes", 
+                    price: 49.99,
+                    category: "boys"
+                },
+                { 
+                    id: 13, 
+                    image: "https://images.unsplash.com/photo-1581539250439-c96689b516dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80", 
+                    nameKey: "boysSet", 
+                    price: 59.99,
+                    category: "boys"
+                },
+                { 
+                    id: 14, 
+                    image: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80", 
+                    nameKey: "boysJacket", 
+                    price: 64.99,
+                    category: "boys"
+                },
+                { 
+                    id: 15, 
+                    image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80", 
+                    nameKey: "boysShorts", 
+                    price: 24.99,
+                    category: "boys"
+                },
+                { 
+                    id: 16, 
+                    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80", 
+                    nameKey: "boysTshirt", 
+                    price: 19.99,
+                    category: "boys"
+                }
+            ],
+            babiesProducts: [
+                { 
+                    id: 17, 
+                    image: "https://images.unsplash.com/photo-1519457431-44ccd64a579b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80", 
+                    nameKey: "babyRomper", 
+                    price: 29.99,
+                    category: "babies"
+                },
+                { 
+                    id: 18, 
+                    image: "https://images.unsplash.com/photo-1549069786-22c69702e7ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80", 
+                    nameKey: "babySet", 
+                    price: 49.99,
+                    category: "babies"
+                },
+                { 
+                    id: 19, 
+                    image: "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80", 
+                    nameKey: "babyBodysuit", 
+                    price: 19.99,
+                    category: "babies"
+                },
+                { 
+                    id: 20, 
+                    image: "https://images.unsplash.com/photo-1581044777550-4cfa60707c03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80", 
+                    nameKey: "babySleepsuit", 
+                    price: 34.99,
+                    category: "babies"
+                },
+                { 
+                    id: 21, 
+                    image: "https://images.unsplash.com/photo-1519238263537-c7ed663a46e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80", 
+                    nameKey: "babyHat", 
+                    price: 14.99,
+                    category: "babies"
+                },
+                { 
+                    id: 22, 
+                    image: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80", 
+                    nameKey: "babyShoes", 
+                    price: 24.99,
+                    category: "babies"
+                },
+                { 
+                    id: 23, 
+                    image: "https://images.unsplash.com/photo-1581539250439-c96689b516dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80", 
+                    nameKey: "babyBlanket", 
+                    price: 39.99,
+                    category: "babies"
+                },
+                { 
+                    id: 24, 
+                    image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80", 
+                    nameKey: "babyToy", 
+                    price: 19.99,
+                    category: "babies"
+                }
+            ]
+        };
+
+        // دالة إنشاء بطاقة المنتج
+        function createProductCard(product, translations) {
+            const productName = translations[product.nameKey] || product.nameKey;
+            
+            return `
+                <div class="product-card animate-fade-in" data-category="${product.category}">
+                    <div class="product-image">
+                        <img src="${product.image}" alt="${productName}">
+                        ${product.badge ? `<div class="product-badge">${product.badge}</div>` : ''}
+                        <div class="product-overlay"></div>
+                        <button class="product-cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">${productName}</h3>
+                        <div class="product-price">
+                            <span class="product-price-current">$${product.price}</span>
+                            ${product.originalPrice ? `<span class="product-price-original">$${product.originalPrice}</span>` : ''}
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // دالة عرض المنتجات
+       function renderProducts(containerId, products, translations) {
+            const container = document.getElementById(containerId);
+            
+            if (container && products) {
+                container.innerHTML = products.map(product => createProductCard(product, translations)).join('');
+                
+                // إعادة ربط أزرار الـ cart
+                setTimeout(() => {
+                    if (window.cartManager) {
+                        window.cartManager.rebindCartButtons();
+                    }
+                }, 100);
+            }
+        }
+
+
+
+        // دالة تهيئة جميع المنتجات
+        function initProducts() {
+            const currentLang = document.documentElement.getAttribute('lang') || 'en';
+            const t = translations[currentLang];
+            
+            // عرض منتجات البنات
+            renderProducts('girlsProducts', productsData.girlsProducts, t);
+            
+            // عرض منتجات الأولاد
+            renderProducts('boysProducts', productsData.boysProducts, t);
+            
+            // عرض منتجات الرضع
+            renderProducts('babiesProducts', productsData.babiesProducts, t);
+            
+            // عرض المنتجات الجديدة (أول 4 منتجات من كل قسم)
+            const newArrivals = [
+                ...productsData.girlsProducts.slice(0, 4),
+                ...productsData.boysProducts.slice(0, 4)
+            ];
+            renderProducts('newArrivals', newArrivals, t);
+        }
+
+        // دالة تصفية المنتجات حسب الفئة
+        function filterProducts(category) {
+            const allProducts = document.querySelectorAll('.product-card');
+            
+            allProducts.forEach(product => {
+                if (category === 'all' || product.getAttribute('data-category') === category) {
+                    product.style.display = 'block';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+        }
+
+        // دالة تبديل اللغة
+        function toggleLanguage() {
+            const currentLang = document.documentElement.getAttribute('lang') || 'en';
+            const newLang = currentLang === 'en' ? 'ar' : 'en';
+            
+            // حفظ اللغة في localStorage
+            localStorage.setItem('preferredLanguage', newLang);
+            
+            // تطبيق اللغة الجديدة
+            applyLanguage(newLang);
+        }
+
+        // دالة تطبيق اللغة
+        function applyLanguage(lang) {
+            // تغيير لغة واتجاه HTML
+            document.documentElement.setAttribute('lang', lang);
+            document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+            
+            // تحديث نص زر اللغة
+            const langBtn = document.getElementById('languageBtn');
+            if (langBtn) {
+                const langText = langBtn.querySelector('.lang-text');
+                langText.textContent = lang === 'en' ? 'AR' : 'EN';
+            }
+            
+            // الحصول على الترجمات
+            const t = translations[lang];
+            
+            // تحديث النصوص في الصفحة
+            updatePageText(t);
+            
+            // إعادة عرض المنتجات
+            initProducts();
+            
+            // إعادة تعيين مستمعي الأحداث
+            resetEventListeners();
+        }
+
+        // دالة تحديث نصوص الصفحة
+        function updatePageText(t) {
+            // تحديث شريط التنقل
+            document.querySelectorAll('.nav-link').forEach((link, index) => {
+                const keys = ['women', 'men', 'girls', 'boys', 'babies', 'offers'];
+                if (keys[index]) {
+                    link.textContent = t[keys[index]];
+                }
+            });
+            
+            // تحديث القائمة المتنقلة
+            document.querySelectorAll('.mobile-link').forEach((link, index) => {
+                const keys = ['women', 'men', 'girls', 'boys', 'babies', 'offers'];
+                if (keys[index]) {
+                    link.textContent = t[keys[index]];
+                }
+            });
+            
+            // تحديث حقل البحث
+            const searchInputs = document.querySelectorAll('.search-input');
+            searchInputs.forEach(input => {
+                input.placeholder = t.searchPlaceholder;
+            });
+            
+            // تحديث قسم البطل
+            const heroTitle = document.querySelector('.hero-title');
+            const heroSubtitle = document.querySelector('.hero-subtitle');
+            const heroBtn = document.querySelector('.hero-btn');
+            
+            if (heroTitle) heroTitle.textContent = t.heroTitle;
+            if (heroSubtitle) heroSubtitle.textContent = t.heroSubtitle;
+            if (heroBtn) heroBtn.textContent = t.exploreCollection;
+            
+            // تحديث أزرار الفئات
+            const categoryBtns = document.querySelectorAll('.category-btn');
+            const categoryKeys = ['all', 'girlsCategory', 'boysCategory', 'babiesCategory', 'newArrivals', 'sale'];
+            
+            categoryBtns.forEach((btn, index) => {
+                if (categoryKeys[index]) {
+                    btn.textContent = t[categoryKeys[index]];
+                }
+            });
+            
+            // تحديث عناوين الأقسام
+            const sectionTitles = document.querySelectorAll('.section-title');
+            const sectionSubtitles = document.querySelectorAll('.section-subtitle');
+            
+            if (sectionTitles[0]) sectionTitles[0].textContent = t.girlsCollection;
+            if (sectionTitles[1]) sectionTitles[1].textContent = t.boysCollection;
+            if (sectionTitles[2]) sectionTitles[2].textContent = t.babiesCollection;
+            if (sectionTitles[3]) sectionTitles[3].textContent = t.newArrivalsTitle;
+            
+            if (sectionSubtitles[0]) sectionSubtitles[0].textContent = t.girlsSubtitle;
+            if (sectionSubtitles[1]) sectionSubtitles[1].textContent = t.boysSubtitle;
+            if (sectionSubtitles[2]) sectionSubtitles[2].textContent = t.babiesSubtitle;
+            if (sectionSubtitles[3]) sectionSubtitles[3].textContent = t.newArrivalsSubtitle;
+            
+            // تحديث النشرة البريدية
+            const newsletterTitle = document.querySelector('.newsletter-title');
+            const newsletterSubtitle = document.querySelector('.newsletter-subtitle');
+            const newsletterInput = document.querySelector('.newsletter-input');
+            const newsletterBtn = document.querySelector('.newsletter-btn');
+            
+            if (newsletterTitle) newsletterTitle.textContent = t.stayUpdated;
+            if (newsletterSubtitle) newsletterSubtitle.textContent = t.newsletterSubtitle;
+            if (newsletterInput) newsletterInput.placeholder = t.enterEmail;
+            if (newsletterBtn) newsletterBtn.textContent = t.subscribe;
+            
+            // تحديث التذييل
+            const footerSubtitles = document.querySelectorAll('.footer-subtitle');
+            const footerText = document.querySelector('.footer-text');
+            
+            if (footerSubtitles[0]) footerSubtitles[0].textContent = t.shop;
+            if (footerSubtitles[1]) footerSubtitles[1].textContent = t.help;
+            if (footerSubtitles[2]) footerSubtitles[2].textContent = t.followUs;
+            if (footerText) footerText.textContent = t.footerText;
+            
+            // تحديث روابط التذييل
+            const footerLinks = document.querySelectorAll('.footer-links a');
+            if (footerLinks[0]) footerLinks[0].textContent = t.women;
+            if (footerLinks[1]) footerLinks[1].textContent = t.men;
+            if (footerLinks[2]) footerLinks[2].textContent = t.girls;
+            if (footerLinks[3]) footerLinks[3].textContent = t.boys;
+            if (footerLinks[4]) footerLinks[4].textContent = t.contactUs;
+            if (footerLinks[5]) footerLinks[5].textContent = t.shipping;
+            if (footerLinks[6]) footerLinks[6].textContent = t.returns;
+            if (footerLinks[7]) footerLinks[7].textContent = t.faq;
+        }
+
+        // دالة تبديل وضع الظلام
+        function toggleDarkMode() {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            // حفظ الوضع في localStorage
+            localStorage.setItem('theme', newTheme);
+            
+            // تطبيق الوضع الجديد
+            applyTheme(newTheme);
+        }
+
+        // دالة تطبيق الوضع
+        function applyTheme(theme) {
+            document.documentElement.setAttribute('data-theme', theme);
+            
+            // تحديث أيقونة زر Dark Mode
+            const darkModeBtn = document.getElementById('darkModeBtn');
+            if (darkModeBtn) {
+                const icon = darkModeBtn.querySelector('i');
+                if (theme === 'dark') {
+                    icon.className = 'fas fa-sun';
+                } else {
+                    icon.className = 'fas fa-moon';
+                }
+            }
+        }
+
+        // تهيئة القائمة المتنقلة
+        function initMobileMenu() {
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+            
+            if (mobileMenuBtn && mobileMenu) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    const isOpen = mobileMenu.style.display === 'block';
+                    mobileMenu.style.display = isOpen ? 'none' : 'block';
+                    mobileMenuBtn.innerHTML = isOpen ? '<i class="fas fa-bars"></i>' : '<i class="fas fa-times"></i>';
+                });
+            }
+        }
+
+        // تهيئة اللغة
+        function initLanguage() {
+            // الحصول على اللغة المحفوظة أو استخدام اللغة الافتراضية
+            const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+            applyLanguage(savedLang);
+        }
+
+        // تهيئة وضع الظلام
+        function initDarkMode() {
+            // الحصول على الوضع المحفوظ أو استخدام الوضع الافتراضي
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            applyTheme(savedTheme);
+        }
+
+        // تهيئة تصفية الفئات
+         function initCategoryFilter() {
+            const allBtn = document.getElementById('allBtn');
+            const girlsBtn = document.getElementById('girlsBtn');
+            const boysBtn = document.getElementById('boysBtn');
+            const babiesBtn = document.getElementById('babiesBtn');
+            const arrivalsBtn = document.getElementById('arrivalsBtn');
+            
+            // تم إزالة saleBtn من هنا لأنه أصبح رابطاً مباشراً
+            
+            if (allBtn) {
+                allBtn.addEventListener('click', function() {
+                    // إزالة النشاط من جميع الأزرار
+                    document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
+                    
+                    // إضافة النشاط للزر المحدد
+                    this.classList.add('active');
+                    
+                    // تصفية المنتجات
+                    filterProducts('all');
+                    
+                    // التمرير إلى قسم البنات
+                    document.getElementById('girls-collection').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                });
+            }
+            
+            if (girlsBtn) {
+                girlsBtn.addEventListener('click', function() {
+                    // إزالة النشاط من جميع الأزرار
+                    document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
+                    
+                    // إضافة النشاط للزر المحدد
+                    this.classList.add('active');
+                    
+                    // تصفية المنتجات
+                    filterProducts('girls');
+                    
+                    // التمرير إلى قسم البنات
+                    document.getElementById('girls-collection').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                });
+            }
+            
+            if (boysBtn) {
+                boysBtn.addEventListener('click', function() {
+                    // إزالة النشاط من جميع الأزرار
+                    document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
+                    
+                    // إضافة النشاط للزر المحدد
+                    this.classList.add('active');
+                    
+                    // تصفية المنتجات
+                    filterProducts('boys');
+                    
+                    // التمرير إلى قسم الأولاد
+                    document.getElementById('boys-collection').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                });
+            }
+            
+            if (babiesBtn) {
+                babiesBtn.addEventListener('click', function() {
+                    // إزالة النشاط من جميع الأزرار
+                    document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
+                    
+                    // إضافة النشاط للزر المحدد
+                    this.classList.add('active');
+                    
+                    // تصفية المنتجات
+                    filterProducts('babies');
+                    
+                    // التمرير إلى قسم الرضع
+                    document.getElementById('babies-collection').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                });
+            }
+            
+            if (arrivalsBtn) {
+                arrivalsBtn.addEventListener('click', function() {
+                    // إزالة النشاط من جميع الأزرار
+                    document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
+                    
+                    // إضافة النشاط للزر المحدد
+                    this.classList.add('active');
+                    
+                    // التمرير إلى قسم New Arrivals
+                    const newArrivalsSection = document.getElementById('new-arrivals');
+                    if (newArrivalsSection) {
+                        newArrivalsSection.scrollIntoView({ 
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            }
+        }
+        // دالة إعادة تعيين مستمعي الأحداث
+        function resetEventListeners() {
+            // إعادة إضافة مستمعي الأحداث للأزرار
+            document.querySelectorAll('.product-cart-btn').forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    const currentLang = document.documentElement.getAttribute('lang');
+                    const message = currentLang === 'ar' ? 'تمت إضافة المنتج إلى السلة' : 'Product added to cart';
+                    alert(message);
+                });
+            });
+            
+            // إعادة إضافة مستمعي الأحداث لبطاقات المنتجات
+            document.querySelectorAll('.product-card').forEach(card => {
+                card.addEventListener('click', function() {
+                    const productName = this.querySelector('.product-name').textContent;
+                    const currentLang = document.documentElement.getAttribute('lang');
+                    const message = currentLang === 'ar' ? `تفاصيل المنتج: ${productName}` : `Product Details: ${productName}`;
+                    alert(message);
+                });
+            });
+            
+            // إعادة إضافة مستمعي الأحداث لأزرار الاشتراك
+            document.querySelectorAll('.newsletter-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    const input = this.parentElement.querySelector('.newsletter-input');
+                    const currentLang = document.documentElement.getAttribute('lang');
+                    
+                    if (input.value) {
+                        const message = currentLang === 'ar' 
+                            ? `شكرًا على اشتراكك! سنرسل التحديثات إلى ${input.value}`
+                            : `Thank you for subscribing! We'll send updates to ${input.value}`;
+                        alert(message);
+                        input.value = '';
+                    } else {
+                        const message = currentLang === 'ar' 
+                            ? 'يرجى إدخال بريدك الإلكتروني'
+                            : 'Please enter your email address';
+                        alert(message);
+                    }
+                });
+            });
+        }
+
+        // دالة تهيئة البحث - الحل الجديد
+        function initSearch() {
+            // الانتظار حتى يتم تحميل الـ navbar
+            setTimeout(() => {
+                const searchInput = document.getElementById('searchInput');
+                const mobileSearchInput = document.getElementById('mobileSearchInput');
+                
+                function performSearch(searchTerm) {
+                    if (searchTerm.trim() === '') {
+                        const currentLang = document.documentElement.getAttribute('lang');
+                        const message = currentLang === 'ar' 
+                            ? 'يرجى إدخال كلمة البحث' 
+                            : 'Please enter a search term';
+                        alert(message);
+                        return;
+                    }
+                    
+                    // تخزين كلمة البحث في localStorage للاستخدام في صفحة نتائج البحث
+                    localStorage.setItem('searchQuery', searchTerm);
+                    
+                    // الانتقال إلى صفحة نتائج البحث
+                    window.location.href = 'search-results.html';
+                }
+                
+                // البحث عند الضغط على Enter في حقل البحث الرئيسي
+                if (searchInput) {
+                    searchInput.addEventListener('keypress', function(e) {
+                        if (e.key === 'Enter') {
+                            performSearch(this.value);
+                        }
+                    });
+                }
+                
+                // البحث عند الضغط على Enter في حقل البحث المتنقل
+                if (mobileSearchInput) {
+                    mobileSearchInput.addEventListener('keypress', function(e) {
+                        if (e.key === 'Enter') {
+                            performSearch(this.value);
+                        }
+                    });
+                }
+                
+                // إضافة أزرار البحث يدوياً إذا لم تكن موجودة
+                addSearchButtons();
+            }, 500); // تأخير 500ms للتأكد من تحميل الـ navbar
+        }
+
+        // دالة لإضافة أزرار البحث
+        function addSearchButtons() {
+            // إضافة زر البحث في شريط البحث الرئيسي
+            const desktopSearchContainer = document.querySelector('.nav-search .search-container');
+            if (desktopSearchContainer && !desktopSearchContainer.querySelector('.search-btn')) {
+                const searchBtn = document.createElement('button');
+                searchBtn.className = 'search-btn';
+                searchBtn.innerHTML = '<i class="fas fa-search"></i>';
+                searchBtn.style.background = 'none';
+                searchBtn.style.border = 'none';
+                searchBtn.style.padding = '0.5rem';
+                searchBtn.style.cursor = 'pointer';
+                searchBtn.style.color = 'var(--muted-text)';
+                searchBtn.style.position = 'absolute';
+                searchBtn.style.right = '0.5rem';
+                searchBtn.style.top = '50%';
+                searchBtn.style.transform = 'translateY(-50%)';
+                
+                searchBtn.addEventListener('click', function() {
+                    const searchInput = desktopSearchContainer.querySelector('.search-input');
+                    if (searchInput && searchInput.value.trim() !== '') {
+                        localStorage.setItem('searchQuery', searchInput.value.trim());
+                        window.location.href = 'search-results.html';
+                    } else {
+                        const currentLang = document.documentElement.getAttribute('lang');
+                        const message = currentLang === 'ar' 
+                            ? 'يرجى إدخال كلمة البحث' 
+                            : 'Please enter a search term';
+                        alert(message);
+                    }
+                });
+                
+                desktopSearchContainer.appendChild(searchBtn);
+            }
+            
+            // إضافة زر البحث في شريط البحث المتنقل
+            const mobileSearchContainer = document.querySelector('.mobile-search .search-container');
+            if (mobileSearchContainer && !mobileSearchContainer.querySelector('.search-btn')) {
+                const mobileSearchBtn = document.createElement('button');
+                mobileSearchBtn.className = 'search-btn';
+                mobileSearchBtn.innerHTML = '<i class="fas fa-search"></i>';
+                mobileSearchBtn.style.background = 'none';
+                mobileSearchBtn.style.border = 'none';
+                mobileSearchBtn.style.padding = '0.5rem';
+                mobileSearchBtn.style.cursor = 'pointer';
+                mobileSearchBtn.style.color = 'var(--muted-text)';
+                mobileSearchBtn.style.position = 'absolute';
+                mobileSearchBtn.style.right = '0.5rem';
+                mobileSearchBtn.style.top = '50%';
+                mobileSearchBtn.style.transform = 'translateY(-50%)';
+                
+                mobileSearchBtn.addEventListener('click', function() {
+                    const mobileSearchInput = mobileSearchContainer.querySelector('.search-input');
+                    if (mobileSearchInput && mobileSearchInput.value.trim() !== '') {
+                        localStorage.setItem('searchQuery', mobileSearchInput.value.trim());
+                        window.location.href = 'search-results.html';
+                    } else {
+                        const currentLang = document.documentElement.getAttribute('lang');
+                        const message = currentLang === 'ar' 
+                            ? 'يرجى إدخال كلمة البحث' 
+                            : 'Please enter a search term';
+                        alert(message);
+                    }
+                });
+                
+                mobileSearchContainer.appendChild(mobileSearchBtn);
+            }
+        }
+
+        // تهيئة التطبيق
+        function initApp() {
+            // تهيئة اللغة
+            initLanguage();
+            
+            // تهيئة وضع الظلام
+            initDarkMode();
+            
+            // تهيئة المنتجات
+            initProducts();
+            
+            // إضافة مستمع حدث لزر اللغة
+            const languageBtn = document.getElementById('languageBtn');
+            if (languageBtn) {
+                languageBtn.addEventListener('click', toggleLanguage);
+            }
+            
+            // إضافة مستمع حدث لزر Dark Mode
+            const darkModeBtn = document.getElementById('darkModeBtn');
+            if (darkModeBtn) {
+                darkModeBtn.addEventListener('click', toggleDarkMode);
+            }
+            
+            // إضافة مستمع حدث لزر Explore Collection
+            const exploreBtn = document.getElementById('exploreBtn');
+            if (exploreBtn) {
+                exploreBtn.addEventListener('click', function() {
+                    const girlsSection = document.getElementById('girls-collection');
+                    if (girlsSection) {
+                        girlsSection.scrollIntoView({ 
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            }
+            
+            // تهيئة القائمة المتنقلة
+            initMobileMenu();
+            
+            // تهيئة تصفية الفئات
+            initCategoryFilter();
+            
+            // تهيئة البحث
+            initSearch();
+            
+            // إعادة تعيين مستمعي الأحداث بعد تغيير اللغة
+            resetEventListeners();
+        }
+
+        // تهيئة التطبيق عند تحميل الصفحة
+        document.addEventListener('DOMContentLoaded', initApp);
+    </script>
+</body>
+</html>

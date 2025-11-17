@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Collection - StyleShop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="css/women.css">
+</head>
+<body>
+    <!-- Navigation Bar - LTR Direction -->
+    <div id="navbar-container"></div>
+
+    <!-- Main Content - RTL Direction -->
+    <main class="main-content">
+        <!-- Women's Hero Section - مع صورة خلفية -->
+        <section class="women-hero">
+            <div class="container">
+                <h1 data-translate="womenCollection">Women's Collection</h1>
+                <p data-translate="womenSubtitle">Discover our latest trends and timeless classics</p>
+                <div class="category-tabs">
+                    <a href="#new" class="category-tab active" data-translate="newArrivals">New Arrivals</a>
+                    <a href="#hijab" class="category-tab" data-translate="hijabCollection">Hijab Collection</a>
+                    <a href="#others" class="category-tab" data-translate="others">Others</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Arrivals Section -->
+        <section class="products-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" id="new" data-translate="newArrivals">New Arrivals</h2>
+                    <p class="section-subtitle" data-translate="newArrivalsSubtitle">Latest additions to our women's collection</p>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="products-grid" id="newArrivalsGrid">
+                    <!-- سيتم إضافة المنتجات هنا بواسطة JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Hijab Collection Section - تم التعديل -->
+        <section class="hijab-collection">
+            <div class="container">
+                <div class="collection-header">
+                    <h2 class="collection-title" id="hijab" data-translate="hijabCollection">Hijab Collection</h2>
+                    <p class="collection-subtitle" data-translate="hijabSubtitle">Modest and stylish designs for every occasion</p>
+                    <div class="collection-divider"></div>
+                </div>
+                
+                <div class="products-grid" id="hijabGrid">
+                    <!-- سيتم إضافة المنتجات هنا بواسطة JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Others Section -->
+        <section class="products-section" id="others">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-translate="others">Others</h2>
+                    <p class="section-subtitle" data-translate="othersSubtitle">More amazing products for you</p>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="products-grid" id="othersGrid">
+                    <!-- سيتم إضافة المنتجات هنا بواسطة JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2 class="newsletter-title" data-translate="stayUpdated">Stay Updated</h2>
+                    <p class="newsletter-subtitle" data-translate="newsletterSubtitle">Subscribe to get special offers and updates</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" class="newsletter-input" data-translate-placeholder="enterEmail">
+                        <button class="newsletter-btn" data-translate="subscribe">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <h3 class="footer-title">STYLESHOP</h3>
+                        <p class="footer-text" data-translate="footerText">Your destination for premium fashion</p>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-subtitle" data-translate="shop">Shop</h4>
+                        <ul class="footer-links">
+                            <li><a href="women.html" data-translate="women">Women</a></li>
+                            <li><a href="men.html" data-translate="men">Men</a></li>
+                            <li><a href="girls.html" data-translate="girls">Girls</a></li>
+                            <li><a href="boys.html" data-translate="boys">Boys</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-subtitle" data-translate="help">Help</h4>
+                        <ul class="footer-links">
+                            <li><a href="#" data-translate="contactUs">Contact Us</a></li>
+                            <li><a href="#" data-translate="shipping">Shipping</a></li>
+                            <li><a href="#" data-translate="returns">Returns</a></li>
+                            <li><a href="#" data-translate="faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-subtitle" data-translate="followUs">Follow Us</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Pinterest</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p data-translate="copyright">&copy; 2025 StyleShop. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+     <script src="navbar.js"></script>
+<script src="cart.js"></script>
+    <script>
+        // نظام الترجمة
+        const translations = {
+            en: {
+                // Navigation
+                women: "Women",
+                men: "Men", 
+                girls: "Girls",
+                boys: "Boys",
+                babies: "Babies",
+                offers: "Offers",
+                searchPlaceholder: "Search products...",
+                
+                // Hero Section
+                womenCollection: "Women's Collection",
+                womenSubtitle: "Discover our latest trends and timeless classics",
+                
+                // Category Tabs
+                newArrivals: "New Arrivals",
+                hijabCollection: "Hijab Collection",
+                others: "Others",
+                
+                // Sections
+                newArrivalsSubtitle: "Latest additions to our women's collection",
+                hijabSubtitle: "Modest and stylish designs for every occasion",
+                othersSubtitle: "More amazing products for you",
+                
+                // Newsletter
+                stayUpdated: "Stay Updated",
+                newsletterSubtitle: "Subscribe to get special offers and updates",
+                enterEmail: "Enter your email",
+                subscribe: "Subscribe",
+                
+                // Footer
+                shop: "Shop",
+                help: "Help", 
+                contactUs: "Contact Us",
+                shipping: "Shipping",
+                returns: "Returns",
+                faq: "FAQ",
+                followUs: "Follow Us",
+                footerText: "Your destination for premium fashion",
+                copyright: "&copy; 2025 StyleShop. All rights reserved."
+            },
+            ar: {
+                // Navigation
+                women: "نسائي",
+                men: "رجالي",
+                girls: "بنات", 
+                boys: "أولاد",
+                babies: "أطفال",
+                offers: "العروض",
+                searchPlaceholder: "ابحث عن المنتجات...",
+                
+                // Hero Section
+                womenCollection: "مجموعة النساء",
+                womenSubtitle: "اكتشف أحدث صيحات الموضة والكلاسيكيات الخالدة",
+                
+                // Category Tabs
+                newArrivals: "المنتجات الجديدة",
+                hijabCollection: "مجموعة الحجاب",
+                others: "أخرى",
+                
+                // Sections
+                newArrivalsSubtitle: "أحدث الإضافات إلى مجموعة النساء لدينا",
+                hijabSubtitle: "تصاميم محتشمة وأنيقة لكل المناسبات",
+                othersSubtitle: "المزيد من المنتجات المذهلة لك",
+                
+                // Newsletter
+                stayUpdated: "ابقَ على اطلاع",
+                newsletterSubtitle: "اشترك للحصول على عروض خاصة وتحديثات",
+                enterEmail: "أدخل بريدك الإلكتروني",
+                subscribe: "اشتراك",
+                
+                // Footer
+                shop: "تسوق",
+                help: "مساعدة", 
+                contactUs: "اتصل بنا",
+                shipping: "الشحن",
+                returns: "الإرجاع",
+                faq: "الأسئلة الشائعة",
+                followUs: "تابعنا",
+                footerText: "وجهتك للأزياء المتميزة",
+                copyright: "&copy; 2025 StyleShop. جميع الحقوق محفوظة."
+            }
+        };
+
+        // بيانات المنتجات
+        const productsData = {
+            "new-arrivals": [
+                {
+                    id: 1,
+                    name: "Elegant Floral Dress",
+                    price: 69.99,
+                    oldPrice: 89.99,
+                    isNew: true,
+                    image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                },
+                {
+                    id: 2,
+                    name: "Casual Summer Top",
+                    price: 39.99,
+                    oldPrice: null,
+                    isNew: true,
+                    image: "https://images.unsplash.com/photo-1506629905607-e48b0e67d879?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                },
+                {
+                    id: 3,
+                    name: "Designer Handbag",
+                    price: 99.99,
+                    oldPrice: 129.99,
+                    isNew: true,
+                    image: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                },
+                {
+                    id: 4,
+                    name: "Comfortable Jeans",
+                    price: 59.99,
+                    oldPrice: null,
+                    isNew: true,
+                    image: "https://images.unsplash.com/photo-1542272604-787c3835535d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                },
+                {
+                    id: 5,
+                    name: "Elegant Blouse",
+                    price: 45.99,
+                    oldPrice: 55.99,
+                    isNew: true,
+                    image: "https://images.unsplash.com/photo-1589810635657-232948472d98?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                },
+                {
+                    id: 6,
+                    name: "Classic Skirt",
+                    price: 49.99,
+                    oldPrice: null,
+                    isNew: true,
+                    image: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                }
+            ],
+            "hijab": [
+                {
+                    id: 7,
+                    name: "Silk Chiffon Hijab",
+                    price: 24.99,
+                    oldPrice: null,
+                    isNew: false,
+                    image: "https://images.unsplash.com/photo-1525450824786-227cbef70703?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                },
+                {
+                    id: 8,
+                    name: "Cotton Jersey Hijab",
+                    price: 19.99,
+                    oldPrice: null,
+                    isNew: false,
+                    image: "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                },
+                {
+                    id: 9,
+                    name: "Printed Viscose Hijab",
+                    price: 29.99,
+                    oldPrice: null,
+                    isNew: false,
+                    image: "https://images.unsplash.com/photo-1581044777550-4cfa60707c03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                },
+                {
+                    id: 10,
+                    name: "Luxury Satin Hijab",
+                    price: 34.99,
+                    oldPrice: null,
+                    isNew: false,
+                    image: "https://images.unsplash.com/photo-1581044777550-4cfa60707c03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                },
+                {
+                    id: 11,
+                    name: "Embroidered Hijab",
+                    price: 39.99,
+                    oldPrice: 49.99,
+                    isNew: true,
+                    image: "https://images.unsplash.com/photo-1581044777550-4cfa60707c03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                },
+                {
+                    id: 12,
+                    name: "Casual Daily Hijab",
+                    price: 17.99,
+                    oldPrice: null,
+                    isNew: false,
+                    image: "https://images.unsplash.com/photo-1581044777550-4cfa60707c03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                }
+            ],
+            "others": [
+                {
+                    id: 13,
+                    name: "Winter Coat",
+                    price: 89.99,
+                    oldPrice: 119.99,
+                    isNew: false,
+                    image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                },
+                {
+                    id: 14,
+                    name: "Evening Gown",
+                    price: 129.99,
+                    oldPrice: null,
+                    isNew: false,
+                    image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                },
+                {
+                    id: 15,
+                    name: "Casual Dress",
+                    price: 49.99,
+                    oldPrice: 69.99,
+                    isNew: false,
+                    image: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                },
+                {
+                    id: 16,
+                    name: "Formal Blazer",
+                    price: 79.99,
+                    oldPrice: null,
+                    isNew: false,
+                    image: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                }
+            ]
+        };
+
+        // دالة لإنشاء بطاقة منتج
+        function createProductCard(product) {
+            return `
+                <div class="product-card animate-fade-in" data-id="${product.id}">
+                    <div class="product-image">
+                        <img src="${product.image}" alt="${product.name}">
+                        ${product.isNew ? '<div class="product-badge">NEW</div>' : ''}
+                        <div class="product-overlay"></div>
+                        <button class="product-cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">${product.name}</h3>
+                        <div class="product-price">
+                            <span class="product-price-current">$${product.price}</span>
+                            ${product.oldPrice ? `<span class="product-price-original">$${product.oldPrice}</span>` : ''}
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // دالة لعرض المنتجات في الشبكة
+         // دالة لعرض المنتجات في الشبكة
+      function renderProducts(category, containerId) {
+    const container = document.getElementById(containerId);
+    const products = productsData[category];
+    
+    if (container && products) {
+        container.innerHTML = products.map(product => createProductCard(product)).join('');
+        
+        // إعادة ربط أزرار الـ cart
+        setTimeout(() => {
+            if (window.cartManager) {
+                window.cartManager.rebindCartButtons();
+            }
+        }, 100);
+    }
+}
+
+        // دالة الترجمة
+        function translatePage(lang) {
+            const elements = document.querySelectorAll('[data-translate]');
+            const placeholders = document.querySelectorAll('[data-translate-placeholder]');
+            
+            // تحديث النصوص
+            elements.forEach(element => {
+                const key = element.getAttribute('data-translate');
+                if (translations[lang][key]) {
+                    element.textContent = translations[lang][key];
+                }
+            });
+            
+            // تحديث النصوص في العناصر الخاصة مثل innerHTML
+            const copyright = document.querySelector('[data-translate="copyright"]');
+            if (copyright && translations[lang]['copyright']) {
+                copyright.innerHTML = translations[lang]['copyright'];
+            }
+            
+            // تحديث العناصر النائبة
+            placeholders.forEach(element => {
+                const key = element.getAttribute('data-translate-placeholder');
+                if (translations[lang][key]) {
+                    element.placeholder = translations[lang][key];
+                }
+            });
+            
+            // تحديث اتجاه الصفحة
+            document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+            document.documentElement.setAttribute('lang', lang);
+            
+            // تحديث نص زر اللغة
+            const langBtn = document.getElementById('languageBtn');
+            if (langBtn) {
+                const langText = langBtn.querySelector('.lang-text');
+                langText.textContent = lang === 'en' ? 'AR' : 'EN';
+            }
+            
+            // حفظ اللغة في localStorage
+            localStorage.setItem('preferredLanguage', lang);
+        }
+
+        // دالة تبديل اللغة
+        function toggleLanguage() {
+            const currentLang = document.documentElement.getAttribute('lang') || 'en';
+            const newLang = currentLang === 'ar' ? 'en' : 'ar';
+            translatePage(newLang);
+        }
+
+        // دالة تبديل وضع الظلام
+        function toggleDarkMode() {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            // حفظ الوضع في localStorage
+            localStorage.setItem('theme', newTheme);
+            
+            // تطبيق الوضع الجديد
+            applyTheme(newTheme);
+        }
+
+        // دالة تطبيق الوضع
+        function applyTheme(theme) {
+            document.documentElement.setAttribute('data-theme', theme);
+            
+            // تحديث أيقونة زر Dark Mode
+            const darkModeBtn = document.getElementById('darkModeBtn');
+            if (darkModeBtn) {
+                const icon = darkModeBtn.querySelector('i');
+                if (theme === 'dark') {
+                    icon.className = 'fas fa-sun';
+                } else {
+                    icon.className = 'fas fa-moon';
+                }
+            }
+        }
+
+        // تهيئة الصفحة عند التحميل
+        document.addEventListener('DOMContentLoaded', function() {
+            // تهيئة اللغة
+            const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+            translatePage(savedLang);
+            
+            // تهيئة وضع الظلام
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            applyTheme(savedTheme);
+            
+            // عرض المنتجات في الأقسام المختلفة
+            renderProducts('new-arrivals', 'newArrivalsGrid');
+            renderProducts('hijab', 'hijabGrid');
+            renderProducts('others', 'othersGrid');
+            
+            // إضافة مستمعي الأحداث للأزرار
+            document.addEventListener('click', function(e) {
+                if (e.target.classList.contains('product-cart-btn') || e.target.closest('.product-cart-btn')) {
+                    const button = e.target.classList.contains('product-cart-btn') ? e.target : e.target.closest('.product-cart-btn');
+                    const productCard = button.closest('.product-card');
+                    const productId = productCard.getAttribute('data-id');
+                    const currentLang = document.documentElement.getAttribute('lang');
+                    const message = currentLang === 'ar' ? 'تمت إضافة المنتج إلى سلة التسوق' : 'Product added to cart';
+                    alert(message);
+                }
+                
+                if (e.target.classList.contains('product-card') || e.target.closest('.product-card')) {
+                    const card = e.target.classList.contains('product-card') ? e.target : e.target.closest('.product-card');
+                    const productId = card.getAttribute('data-id');
+                    const currentLang = document.documentElement.getAttribute('lang');
+                    const message = currentLang === 'ar' ? `تفاصيل المنتج: ${productId}` : `Product Details: ${productId}`;
+                    alert(message);
+                }
+            });
+            
+            // إضافة مستمع حدث لزر الاشتراك
+            const newsletterBtn = document.querySelector('.newsletter-btn');
+            if (newsletterBtn) {
+                newsletterBtn.addEventListener('click', function() {
+                    const input = this.parentElement.querySelector('.newsletter-input');
+                    const currentLang = document.documentElement.getAttribute('lang');
+                    
+                    if (input.value) {
+                        const message = currentLang === 'ar' 
+                            ? `شكرًا على اشتراكك! سنرسل التحديثات إلى ${input.value}`
+                            : `Thank you for subscribing! We'll send updates to ${input.value}`;
+                        alert(message);
+                        input.value = '';
+                    } else {
+                        const message = currentLang === 'ar' 
+                            ? 'يرجى إدخال بريدك الإلكتروني'
+                            : 'Please enter your email address';
+                        alert(message);
+                    }
+                });
+            }
+            
+            // إعداد القائمة المتنقلة
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+            
+            if (mobileMenuBtn && mobileMenu) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    const isOpen = mobileMenu.style.display === 'block';
+                    mobileMenu.style.display = isOpen ? 'none' : 'block';
+                    mobileMenuBtn.innerHTML = isOpen ? '<i class="fas fa-bars"></i>' : '<i class="fas fa-times"></i>';
+                });
+            }
+            
+            // إضافة مستمعي الأحداث للأزرار
+            const languageBtn = document.getElementById('languageBtn');
+            if (languageBtn) {
+                languageBtn.addEventListener('click', toggleLanguage);
+            }
+            
+            const darkModeBtn = document.getElementById('darkModeBtn');
+            if (darkModeBtn) {
+                darkModeBtn.addEventListener('click', toggleDarkMode);
+            }
+            
+            // تحديث التبويبات النشطة عند التمرير
+            window.addEventListener('scroll', function() {
+                const sections = document.querySelectorAll('section[id]');
+                const navLinks = document.querySelectorAll('.category-tab');
+                
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (scrollY >= (sectionTop - 100)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${current}`) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
